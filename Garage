@@ -1,0 +1,58 @@
+package garageexercise;
+
+import java.util.ArrayList;
+
+public class Garage {
+	
+		ArrayList<Vehicle> vehicleGarage = new ArrayList<>();
+		ArrayList<Car> carVehicle = new ArrayList<>();
+		ArrayList<Plane> planeVehicle = new ArrayList<>();
+		ArrayList<Boat> boatVehicle = new ArrayList <> ();
+		
+		// Adding
+		
+		public void addToGarage(Vehicle automobile) {
+			vehicleGarage.add(automobile);
+			System.out.println(automobile.getiDNumber() + " has been added to garage"); }
+			
+		// Removing
+			
+		public void removeVehicle(int iDNumber) {
+			int counter = 0;
+			for (Vehicle autmobile:vehicleGarage) {
+				if(iDNumber == automobile.getiDNumber()) break;
+				counter ++; }
+			vehicleGarage.remove(counter); }
+		
+		
+				
+		// Calculating Bill
+				
+				public void billCalc(Vehicle automobile) {
+					System.out.println("Total bill comes to:" + automobile.billCalculation());
+					
+				}
+				
+					
+		// Listing
+				
+				public void listVehicles () {
+					for (Vehicle automobile : vehicleGarage) {
+						System.out.println(automobile.getiDNumber());
+					}
+				}
+		
+		// Clearing Vehicles
+			public void emptyGarage() {
+				vehicle.clear();
+				System.out.println("Garage now empty");
+				
+				
+				
+		
+			
+		
+			
+}
+		
+}
