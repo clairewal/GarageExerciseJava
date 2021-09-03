@@ -1,0 +1,33 @@
+package garageexercise;
+
+public class GarageRunner {
+	
+		public static void main(String[] args) {
+			
+			Garage vehicleGarage = new Garage ();
+			
+			Boat boat1 = new Boat("yacht", 0, true, 1, "medium sized boat", 25);
+			Boat boat2 = new Boat("narrow boat", 0, true, 2, "small boat", 5); 
+			
+			Car car1 = new Car("BMW", 4, true, 3, 4, 212632);
+			Car car2 = new Car("Audi", 4, true, 4,4, 151678);
+			
+			Plane plane1 = new Plane("Airbus", 2, false, 5, 300, 20000);
+			Plane plane2 = new Plane("Jumbo Jet", 2, true, 6, 350, 25000);
+			
+			
+			
+				vehicleGarage.addToGarage(plane2);
+				vehicleGarage.billCalc(plane2);
+				vehicleGarage.listVehicles();
+				vehicleGarage.billCalc(car2);
+				vehicleGarage.emptyGarage();
+				
+			
+			
+		}
+		
+		
+		
+		
+}
