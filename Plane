@@ -1,0 +1,42 @@
+package garageexercise;
+
+public class Plane extends Vehicle{
+	
+	public int length;
+	public int engineCapacity;
+	
+	public Plane(String cartype, int numberOfWheels, boolean operating, int iDNumber, int length, int engineCapacity) {
+		super(cartype, numberOfWheels, operating, iDNumber);
+		this.length = length;
+		this.engineCapacity = engineCapacity;
+
+	}
+
+	
+
+
+	public int getLength() {
+		return length;
+	}
+
+	public void setLength(int length) {
+		this.length = length;
+	}
+
+	public int getEngineCapacity() {
+		return engineCapacity;
+	}
+
+	public void setEngineCapacity(int engineCapacity) {
+		this.engineCapacity = engineCapacity;
+	}
+	
+	@Override
+	public float billCalculation() {
+		int totalBill = 0;
+		totalBill += (length*2);
+		return totalBill;
+	}
+		}
+	
+
