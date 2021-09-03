@@ -1,0 +1,59 @@
+package garageexercise;
+
+public class Vehicle {
+	
+	public String cartype;
+	public int numberOfWheels;
+	public boolean operating;
+	public int iDNumber;
+	
+	public Vehicle(String cartype, int numberOfWheels, boolean operating, int iDNumber) {
+		super();
+		this.cartype = cartype;
+		this.numberOfWheels = numberOfWheels;
+		this.operating = operating;
+		this.iDNumber = iDNumber;
+	}
+
+	public String getCartype() {
+		return cartype;
+	}
+
+	public void setCartype(String cartype) {
+		this.cartype = cartype;
+	}
+
+	public int getNumberOfWheels() {
+		return numberOfWheels;
+	}
+
+	public void setNumberOfWheels(int numberOfWheels) {
+		this.numberOfWheels = numberOfWheels;
+	}
+
+	public boolean isOperating() {
+		return operating;
+	}
+
+	public void setOperating(boolean operating) {
+		this.operating = operating;
+	}
+
+	public int getiDNumber() {
+		return iDNumber;
+	}
+
+	public void setiDNumber(int iDNumber) {
+		this.iDNumber = iDNumber;
+	}
+	
+	public float billCalculation() {
+				if(operating) return 200;
+				else return 100;
+	}
+	
+	
+		
+
+
+}
