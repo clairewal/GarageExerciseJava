@@ -1,0 +1,41 @@
+package garageexercise;
+
+public class Car extends Vehicle{
+	
+	public int numberofWheels;
+	public int reg;
+	
+	public Car(String cartype, int numberOfWheels, boolean operating, int iDNumber, int numberofWheels, int reg) {
+		super(cartype, numberOfWheels, operating, iDNumber);
+		this.numberofWheels = numberofWheels;
+		this.reg = reg;
+	
+	}
+	
+
+	public int getnumberofWheelse() {
+		return numberofWheels;
+	}
+
+	public void setnumberofWheels(int numberofWheels) {
+		this.numberofWheels = numberofWheels;
+	}
+
+	public int getReg() {
+		return reg;
+	}
+
+	public void setReg(int reg) {
+		this.reg = reg;
+	}
+	
+	@Override
+	public float billCalculation() {
+		int totalBill = 0;
+		return totalBill += (numberofWheels*100);
+	}
+	
+
+	
+
+}
