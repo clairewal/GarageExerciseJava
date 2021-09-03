@@ -1,0 +1,40 @@
+package garageexercise;
+
+public class Boat extends Vehicle{
+	
+	
+	public String size;
+	public int capacity;
+	
+	public Boat(String cartype, int numberOfWheels, boolean operating, int iDNumber, String size, int capacity) {
+		super(cartype, numberOfWheels, operating, iDNumber);
+		this.size = size;
+		this.capacity = capacity;
+		
+	}
+
+		public String getSize() {
+		return size;
+	}
+
+	public void setSize(String size) {
+		this.size = size;
+	}
+
+	public int getCapacity() {
+		return capacity;
+	}
+
+	public void setCapacity(int capacity) {
+		this.capacity = capacity;
+	}
+	
+	@Override
+	public float billCalculation() {
+		int totalBill = 0;
+		totalBill += (capacity*10);
+		return totalBill;
+	}
+	
+
+}
