@@ -1,18 +1,33 @@
-package garageexercise;
+package garagefurther;
+
 
 public class Vehicle {
 	
+	// Give vehicle class variables which will be inherited by car, boat, plan :)
+	
 	public String cartype;
 	public int numberOfWheels;
-	public boolean operating;
-	public int iDNumber;
 	
-	public Vehicle(String cartype, int numberOfWheels, boolean operating, int iDNumber) {
+	public String operational;
+	public int ID;
+	
+	// Generate getters and setters
+	// Generate constructors
+	
+	public Vehicle(String cartype, int numberOfWheels, String operational, int ID) {
 		super();
 		this.cartype = cartype;
 		this.numberOfWheels = numberOfWheels;
-		this.operating = operating;
-		this.iDNumber = iDNumber;
+		this.operational = operational;
+		this.ID = ID;
+	}
+	
+	public Vehicle(String cartype, int numberOfWheels, String operational) {
+		super();
+		this.cartype = cartype;
+		this.numberOfWheels = numberOfWheels;
+		this.operational = operational;
+		this.ID = 0;
 	}
 
 	public String getCartype() {
@@ -31,25 +46,28 @@ public class Vehicle {
 		this.numberOfWheels = numberOfWheels;
 	}
 
-	public boolean isOperating() {
-		return operating;
+	public String getOperational() {
+		return operational;
 	}
 
-	public void setOperating(boolean operating) {
-		this.operating = operating;
+	public void setOperational(String operational) {
+		this.operational = operational;
 	}
 
-	public int getiDNumber() {
-		return iDNumber;
+	public int getID() {
+		return ID;
 	}
 
-	public void setiDNumber(int iDNumber) {
-		this.iDNumber = iDNumber;
+	public void setID(int ID) {
+		this.ID = ID;
 	}
 	
+	// Create bill calculator method
+	// Use float because bills can be .00
+	
 	public float billCalculation() {
-				if(operating) return 200;
-				else return 100;
+					int totalBill = 0;
+			return totalBill += (numberOfWheels*100);
 	}
 	
 	
