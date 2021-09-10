@@ -1,25 +1,29 @@
-package garageexercise;
+package garagefurther;
+
+	// Car should inherit the variables from Vehicle class 
+	// Utilise 'extends' method 
 
 public class Car extends Vehicle{
 	
-	public int numberofWheels;
+	// Create distinct variable for the car class
+	
 	public int reg;
 	
-	public Car(String cartype, int numberOfWheels, boolean operating, int iDNumber, int numberofWheels, int reg) {
-		super(cartype, numberOfWheels, operating, iDNumber);
-		this.numberofWheels = numberofWheels;
+	// Create getters and setters
+	// Create constructors
+	
+	public Car(String cartype, int numberOfWheels, String operational, int ID, int reg) {
+		super(cartype, numberOfWheels, operational, ID);
 		this.reg = reg;
 	
 	}
 	
-
-	public int getnumberofWheelse() {
-		return numberofWheels;
+	public Car(String cartype, int numberOfWheels, String operational, int reg) {
+		super(cartype, numberOfWheels, operational);
+		this.reg = reg;
+	
 	}
 
-	public void setnumberofWheels(int numberofWheels) {
-		this.numberofWheels = numberofWheels;
-	}
 
 	public int getReg() {
 		return reg;
@@ -29,10 +33,13 @@ public class Car extends Vehicle{
 		this.reg = reg;
 	}
 	
+	// Create easy calculator
+	// Again, use float
+	
 	@Override
 	public float billCalculation() {
 		int totalBill = 0;
-		return totalBill += (numberofWheels*100);
+		return totalBill += (numberOfWheels*100);
 	}
 	
 
