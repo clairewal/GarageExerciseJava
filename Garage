@@ -1,26 +1,32 @@
-package garageexercise;
+package garagefurther;
+
 
 import java.util.ArrayList;
 
 public class Garage {
+	
+	// Create array list for your vehicles which we can THEN add to the garage
+	// Similar to how we did for the coffee example
 	
 		ArrayList<Vehicle> vehicleGarage = new ArrayList<>();
 		ArrayList<Car> carVehicle = new ArrayList<>();
 		ArrayList<Plane> planeVehicle = new ArrayList<>();
 		ArrayList<Boat> boatVehicle = new ArrayList <> ();
 		
-		// Adding
+		// Adding to the garage
+		// 1. Create method (addToGarage)
+		
 		
 		public void addToGarage(Vehicle automobile) {
 			vehicleGarage.add(automobile);
-			System.out.println(automobile.getiDNumber() + " has been added to garage"); }
+			System.out.println(automobile.getID() + " has been added to garage"); }
 			
 		// Removing
 			
-		public void removeVehicle(int iDNumber) {
+		public void removeVehicle(int ID) {
 			int counter = 0;
-			for (Vehicle autmobile:vehicleGarage) {
-				if(iDNumber == automobile.getiDNumber()) break;
+			for (Vehicle automobile:vehicleGarage) {
+				if(ID == automobile.getID()) break;
 				counter ++; }
 			vehicleGarage.remove(counter); }
 		
@@ -38,19 +44,15 @@ public class Garage {
 				
 				public void listVehicles () {
 					for (Vehicle automobile : vehicleGarage) {
-						System.out.println(automobile.getiDNumber());
+						System.out.println(automobile.getID());
 					}
 				}
 		
 		// Clearing Vehicles
 			public void emptyGarage() {
-				vehicle.clear();
+				vehicleGarage.clear();
 				System.out.println("Garage now empty");
-				
-				
-				
-		
-			
+					
 		
 			
 }
